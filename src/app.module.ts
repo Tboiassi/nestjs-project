@@ -5,6 +5,8 @@ import { AppService } from './app.service.js';
 import { UsersModule } from './users/users.module.js';
 import { DrizzleModule } from '@nestjs/drizzle';
 import { drizzle } from 'drizzle-orm/node-postgres';
+import { DatabaseModule } from './database/database.module.js';
+import { EmployeesModule } from './employees/employees.module.js';
 
 export const { ObserveModule, ObserveInstrument } = createObserveModule();
 
@@ -22,6 +24,8 @@ export const { ObserveModule, ObserveInstrument } = createObserveModule();
       serviceId: 'series',
     }),
     UsersModule,
+    DatabaseModule,
+    EmployeesModule,
   ],
   controllers: [AppController],
   providers: [AppService],

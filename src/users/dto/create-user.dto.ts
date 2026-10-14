@@ -15,5 +15,3 @@ export class CreateUserdto {
    })
    role: "INTERN" | "ENGINEER" | "ADMIN";
 }
-
-// tutorial 1:21:10
