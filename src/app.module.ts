@@ -7,6 +7,7 @@ import { DrizzleModule } from '@nestjs/drizzle';
 import { drizzle } from 'drizzle-orm/node-postgres';
 import { DatabaseModule } from './database/database.module.js';
 import { EmployeesModule } from './employees/employees.module.js';
+import { ThrottlerModule, ThrottlerGuard } from '@nestjs/throttler'
 
 export const { ObserveModule, ObserveInstrument } = createObserveModule();
 
