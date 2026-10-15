@@ -7,6 +7,6 @@ import type { NodePgDatabase } from 'drizzle-orm/node-postgres'
 @Injectable()
 export class DatabaseService {
    constructor(
-   @InjectDrizzle()
-      private readonly db: NodePgDatabase) {}
+   @InjectDrizzle() private readonly databaseService: NodePgDatabase 
+   ) {}
 }
